@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+    <header>
+        <a href="Pepsi - 104349.mp4"><img src="logo copy.png" class="btn"></a>
+        <div class="play"></div>
+        <ul>
+            <li><a herf="#">Home</a></li>
+            <li><a herf="#">Newsletter</a></li>
+            <li><a herf="#">Contact us</a></li>
+            <li><a herf="#">Buy pepsi products</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2><span>PEPSI</span>
+                <br>ALL YOUR FAVORITE FLAVORS.<br>
+                ALL RIGHT HERE.</h2><br>
+            <p>Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang’s all here. Compare flavors, get nutritional facts and check out ingredients for all our Pepsi products.</p><br>
+             <a href="https://janhavikhade.github.io/pepsiwebsite/index2.html">View All Products</a>
+           <br>
+           <a herf="https://janhavikhade.github.io/pepsiwebsite/index1.html">Login</a>
+        </div>
+    <div class="imgBox">
+    <img src="pepsi001.png" class="pepsi">
+</div>
+</div>
+    <ul class="thumb">
+        <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeBgColor('#0062be')"></li>
+        <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgColor('#e60c2c')"></li>
+        <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgColor('#1e1e1e')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="https://www.facebook.com/pepsi/"><img src="facebook.png"  ></a></li>
+        <li><a href="https://www.instagram.com/pepsi/?hl=en"><img src="instagram.png"></a></li>
+        <li><a href="https://twitter.com/pepsi?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png"></a></li>
+    </ul>
+</section>
+<script type="text/javascript">
+function imgSlider(anything){
+    document.querySelector('.pepsi').src = anything;
+}
+function changeBgColor(color){
+    const sec = document.querySelector('.sec');
+    sec.style.background = color;
+}
+</script>
+</body>
+</html>
+
